@@ -1,0 +1,14 @@
+[project]
+name = "crawlee-tiered-proxies-lab"
+version = "0.1.0"
+description = "Small Crawlee and ScrapingBee proxy-tier experiment"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "crawlee[beautifulsoup]>=1.11,<2",
+    "requests>=2.32,<3",
+    "python-dotenv>=1,<2",
+]
+
+[tool.uv]
+package = false

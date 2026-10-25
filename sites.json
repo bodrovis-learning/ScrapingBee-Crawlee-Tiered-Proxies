@@ -1,0 +1,75 @@
+
+[
+  {
+    "id": "books",
+    "difficulty": "easy",
+    "url": "https://books.toscrape.com/",
+    "enabled": true,
+    "expected_content": "A catalog of books with multiple book titles, prices in GBP, availability information, and links to individual book pages.",
+    "notes": "Purpose-built static scraping demo site"
+  },
+  {
+    "id": "hacker_news",
+    "difficulty": "easy",
+    "url": "https://news.ycombinator.com/",
+    "enabled": true,
+    "expected_content": "A list of Hacker News stories with article titles, links, scores, authors, and comment counts.",
+    "notes": "Mostly static HTML; take one page only"
+  },
+  {
+    "id": "quotes",
+    "difficulty": "easy",
+    "url": "https://quotes.toscrape.com/",
+    "enabled": true,
+    "expected_content": "Multiple quotations with their text, author names, and associated tags.",
+    "notes": "Purpose-built static scraping demo site"
+  },
+  {
+    "id": "github_trending",
+    "difficulty": "medium",
+    "url": "https://github.com/trending",
+    "enabled": true,
+    "expected_content": "A list of trending GitHub repositories with repository names, descriptions, programming languages, and star counts.",
+    "notes": "Real-world page; access and rate limits may vary"
+  },
+  {
+    "id": "imdb_top",
+    "difficulty": "medium",
+    "url": "https://www.imdb.com/chart/top/",
+    "enabled": true,
+    "expected_content": "The IMDb Top 250 movie chart containing multiple movie titles, rankings, release years, and IMDb ratings. A navigation page or generic IMDb homepage is not sufficient.",
+    "notes": "Potential access limitations; observe actual responses"
+  },
+  {
+    "id": "ebay_search",
+    "difficulty": "medium",
+    "url": "https://www.ebay.com/sch/i.html?_nkw=laptop",
+    "enabled": true,
+    "expected_content": "Search results for laptops on eBay, including multiple product listings with names, prices, and links to individual listings. A generic eBay homepage or login page is not sufficient.",
+    "notes": "Real e-commerce search; observe actual responses"
+  },
+  {
+    "id": "google_serp",
+    "difficulty": "hard",
+    "url": "https://www.google.com/search?q=python+web+scraping",
+    "enabled": false,
+    "expected_content": "Google search results for the query 'python web scraping', including multiple organic result titles, destination URLs, and snippets. A CAPTCHA, unusual traffic warning, or generic Google homepage is not useful.",
+    "notes": "Special Google ScrapingBee credit rules; dedicated search APIs may be more appropriate"
+  },
+  {
+    "id": "amazon_search",
+    "difficulty": "hard",
+    "url": "https://www.amazon.com/s?k=wireless+mouse",
+    "enabled": false,
+    "expected_content": "Amazon search results for wireless mice, including multiple products with names, prices, ratings, and links to product pages. A robot verification page, login prompt, or generic Amazon homepage is not sufficient.",
+    "notes": "Consider ScrapingBee Amazon API instead of general HTML API"
+  },
+  {
+    "id": "zillow_search",
+    "difficulty": "hard",
+    "url": "https://www.zillow.com/homes/for_sale/",
+    "enabled": false,
+    "expected_content": "Residential real estate listings for sale, including multiple properties with addresses or locations, listing prices, and property details such as bedrooms and bathrooms. A generic homepage, login page, or empty JavaScript shell is not sufficient.",
+    "notes": "Do not activate before reviewing the site's terms and robots rules"
+  }
+]
